@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import socials1 from "@/assets/home/socials-1.jpg";
+---
+
+<section id="socials" class="col-span-2 grid grid-cols-subgrid md:col-span-4">
+  <div
+    class="duotone relative before:bg-blue-300 after:bg-orange-700 max-md:hidden"
+  >
+    <Image
+      src={socials1}
+      alt="Badminton racket and Shuttlecock"
+      class="h-full object-cover"
+    />
+  </div>
+  <div class="bg-orange-300 p-4 md:p-8">
+    <h2>Phone</h2>
+  </div>
+  <div class="bg-orange-400 p-4 md:p-8">
+    <h2>Email</h2>
+  </div>
+  <div class="bg-orange-500 p-4 max-md:col-span-2 md:p-8">
+    <h2>Links</h2>
+  </div>
+</section>

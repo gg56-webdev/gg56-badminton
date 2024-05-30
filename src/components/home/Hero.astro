@@ -1,0 +1,30 @@
+---
+import hero1 from "@/assets/home/hero-1.jpg";
+import { Image } from "astro:assets";
+import Countdown from "./Countdown.astro";
+---
+
+<section class="hero relative min-h-dvh" id="hero">
+  <div class="duotone before:bg-orange-300 after:bg-blue-800">
+    <Image
+      src={hero1}
+      alt="Person playing badminton"
+      class="h-dvh object-cover"
+      loading="eager"
+    />
+  </div>
+  <div class="hero-content text-center text-white">
+    <div class="max-w-md space-y-6">
+      <h1 class="text-4xl md:text-6xl">GG56 Badminton</h1>
+      <p class="">
+        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
+        id nisi.
+      </p>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+  <div class="z-10 mb-12 self-end text-white">
+    <Countdown />
+  </div>
+</section>
