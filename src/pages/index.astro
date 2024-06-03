@@ -10,15 +10,6 @@ import Sponsors from "@/components/home/Sponsors.astro";
 import Socials from "@/components/home/Socials.astro";
 ---
 
-<Layout>
+<Layout noIndex={true}>
   <Hero />
-  <div class="grid grid-cols-2 *:min-h-40 md:grid-cols-4 md:*:min-h-80">
-    <About />
-    <Location />
-    <Timeline />
-    <Application />
-    <Events />
-    <Sponsors />
-    <Socials />
-  </div>
 </Layout>
